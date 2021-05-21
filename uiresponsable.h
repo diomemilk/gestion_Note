@@ -4,19 +4,20 @@
 #include <QMainWindow>
 
 namespace Ui {
-class uiresponsable;
+class UIResponsable;
 }
 
-class uiresponsable : public QMainWindow
+class UIResponsable : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit uiresponsable(QWidget *parent = nullptr);
-    ~uiresponsable();
+    explicit UIResponsable(QWidget *parent = nullptr);
+     UIResponsable(QObject *controller = nullptr);
+    ~UIResponsable();
 
 private:
-    Ui::uiresponsable *ui;
+    Ui::UIResponsable *ui;
 };
 
 #endif // UIRESPONSABLE_H

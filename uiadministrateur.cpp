@@ -84,6 +84,11 @@ void UIAdministrateur::viderInputs(){
 
 }
 
+void UIAdministrateur::setNam(QString login){
+
+    ui->labelUtilisateurConnecte->setText(login);
+}
+
 
 void UIAdministrateur::on_tableView_activated(const QModelIndex &index)
 {

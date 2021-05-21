@@ -6,6 +6,8 @@
 #include "service.h"
 #include "usermodel.h"
 #include "profile.h"
+#include "uiresponsable.h"
+#include "uifarmateur.h"
 
 
 class FlowController : public QObject
@@ -17,14 +19,17 @@ private:
     UiAuthentification* uiAuthentification;
     UIAdministrateur* uiAdministrateur;
     profile* prof;
+    UIResponsable* uiresponsable;
+    UIFarmateur* uifarmateur;
+
 
    //couche service
 
     Service* service;
 
+
 private slots:
 
-signals:
 
     /**
      * @brief onAuthentification buttons clicked
@@ -46,8 +51,10 @@ signals:
     void onUIAdministrateurRechercherClicked();
     void onUIAdministrateurProfilClicked();
 
+
 public:
     void exec();
+
 
 
 

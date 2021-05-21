@@ -1,14 +1,22 @@
 #include "uiresponsable.h"
 #include "ui_uiresponsable.h"
 
-uiresponsable::uiresponsable(QWidget *parent) :
+UIResponsable::UIResponsable(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::uiresponsable)
+    ui(new Ui::UIResponsable)
 {
     ui->setupUi(this);
 }
 
-uiresponsable::~uiresponsable()
+UIResponsable::UIResponsable(QObject *controller)
+    : ui(new Ui::UIResponsable)
+{
+    ui->setupUi(this);
+
+}
+
+
+UIResponsable::~UIResponsable()
 {
     delete ui;
 }

@@ -20,6 +20,7 @@ public:
     ~UIAdministrateur();
     bool getInputs(int* identifiant,QString &nom,QString &prenom, QString &login,QString &password,QString &type,bool* operation);
     bool getId(int* identifiant,QString &login);
+    void setNam(QString login);
     void getTable(QSqlQueryModel* model );
     void viderInputs();
     void notificationInfo(QString message);

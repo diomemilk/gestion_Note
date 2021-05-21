@@ -3,7 +3,7 @@
 #include "QMessageBox"
 #include <QDebug>
 #include "QDateTime"
-FlowController::FlowController() : uiAuthentification(nullptr), uiAdministrateur (nullptr), prof(nullptr)
+FlowController::FlowController() : uiAuthentification(nullptr), uiAdministrateur (nullptr), prof(nullptr), uiresponsable(nullptr), uifarmateur(nullptr)
 {
 
      service = Service::getInstance();
@@ -36,21 +36,26 @@ void FlowController::onAuthentificationLoginClicked(){
             if (user.getType().compare("ADMINISTRATEUR") == 0)
             {
                 uiAdministrateur = new UIAdministrateur(this);
-
+                uiAdministrateur->setNam(user.getLogin());
                 uiAdministrateur->show();
 
             }
             else if(user.getType().compare("RESPONSABLE") == 0)
             {
              //on affiche la fenetre RESPONSABLE
+                uiresponsable = new UIResponsable(this);
+                uiresponsable->show();
             }
             else if(user.getType().compare("ETUDIANT") == 0)
             {
              //on affiche la fenetre ETUDIANT
+
             }
             else if(user.getType().compare("FORMATEUR") == 0)
             {
              //on affiche la fenetre FORMATEUR
+                uifarmateur = new UIFarmateur(this);
+                uifarmateur->show();
             }
 
 

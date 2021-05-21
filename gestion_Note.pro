@@ -16,6 +16,7 @@ SOURCES += \
     service.cpp \
     uiauthentification.cpp\
     uiadministrateur.cpp \
+    uifarmateur.cpp \
     uiresponsable.cpp \
     user.cpp \
     usermodel.cpp
@@ -28,6 +29,7 @@ HEADERS += \
     service.h \
     uiauthentification.h\
     uiadministrateur.h \
+    uifarmateur.h \
     uiresponsable.h \
     user.h \
     usermodel.h
@@ -37,6 +39,7 @@ FORMS += \
     profile.ui \
     uiauthentification.ui\
     uiadministrateur.ui \
+    uifarmateur.ui \
     uiresponsable.ui
 
 
