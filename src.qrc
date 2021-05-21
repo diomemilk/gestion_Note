@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>bg.jpg</file>
+        <file>login.ico</file>
+        <file>secrecy-icon.png</file>
+        <file>lok.png</file>
+        <file>user.png</file>
+        <file>usericon.png</file>
+        <file>shutdown.png</file>
+        <file>Flat_restart_icon.svg.png</file>
+        <file>u.jpg</file>
+        <file>ur.png</file>
+    </qresource>
+</RCC>
