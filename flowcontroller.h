@@ -7,7 +7,7 @@
 #include "usermodel.h"
 #include "profile.h"
 #include "uiresponsable.h"
-#include "uifarmateur.h"
+#include "uiformateur.h"
 
 
 class FlowController : public QObject
